@@ -1,6 +1,7 @@
 /*Alle Farben hier rein*/
 :root { --light: #f2ecec; --dark: #1a1616; --focus: #a12525; --lightBg: #d4cbcb; --darkBg: #2a2828; }
 /*Farben für normalen/light Modus*/
+body {background-color:red}
 @media (prefers-color-scheme: light) {
 	body { background-color: var(--light); color: var(--dark) }
 	.navbar a .navbar-brand { color: var(--dark) }
@@ -11,6 +12,7 @@
 @media (prefers-color-scheme: dark) {
 	body { background-color: var(--dark); color: var(--light) }
 	.jumbotron { background-color: var(--darkBg) }
+	.navbar { background-color: var(--darkBg) !important }
 	a.navbar-brand { color: var(--light) }
 	.nav-link { color: var(--light) }
 	.accordion-item { background-color: var(--darkBg); border-bottom-color: var(--light); }
