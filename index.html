@@ -52,19 +52,38 @@
 				list of modals with everything and search
 				<div class="d-flex">
 					<article class="">
-						<a href="#article1">
-							<img src="https://placehold.co/100x100/white/black" />
-						</a>
+							<img style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" src="https://placehold.co/100x100/white/black" />
 						<h3>Artikel-1</h3>
-						<p>text Artikel-1 lorem ipsum dolores dingsda</p>
+						<p>derhier ist "hard gecoded für styling"</p>
 					</article>
 					<article class="">
 						<a href="#article2">
 							<img src="https://placehold.co/100x100/white/black" />
 						</a>
 						<h3>Artikel-2</h3>
-						<p>text Artikel-2 lorem ipsum dolores dingsda</p>
+						<p>Einzelne Artikel als einzelne Dateien (rss?) sollen hier eingebunden werden -> filter, search und eigene URL</p>
 					</article>
+				</div>
+			</section>
+			<section id="test-modal">
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-fullscreen-lg-down">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body" style="color: var(--dark)">
+								<img src="https://placehold.co/1000x1000/gray/black" class="img-fluid" alt="placeholder" />
+								<p class="h3">Artikel-1</p>
+								<p> text von artikel 1 balbabla</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Link or something</button>
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
