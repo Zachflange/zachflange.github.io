@@ -50,13 +50,13 @@
 		<main>
 			<section id="articles" class="container">
 				list of modals with everything and search
-				<div class="d-flex">
-					<article class="">
+				<div class="row">
+					<article class="col">
 							<img style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" src="https://placehold.co/100x100/white/black" />
 						<h3>Artikel-1</h3>
 						<p>derhier ist "hard gecoded für styling"</p>
 					</article>
-					<article class="">
+					<article class="col">
 						<a href="#article2">
 							<img src="https://placehold.co/100x100/white/black" />
 						</a>
@@ -67,16 +67,20 @@
 			</section>
 			<section id="test-modal">
 				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-fullscreen-lg-down">
+					<div class="modal-dialog modal-xl modal-fullscreen-lg-down">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<h2 class="modal-title" id="exampleModalLabel">Modal title</h2>
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
-							<div class="modal-body" style="color: var(--dark)">
+							<div class="modal-body">
 								<img src="https://placehold.co/1000x1000/gray/black" class="img-fluid" alt="placeholder" />
-								<p class="h3">Artikel-1</p>
-								<p> text von artikel 1 balbabla</p>
+								<p style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<hr \>
+								<h3>Ein h3 Zwischendingens</h3>
+								<p>Libero nostrum repellendus et id ex. Est hic dolorem commodi. Quam ad accusantium non enim cumque.</p>
+								<p>Ut distinctio sunt autem iste sapiente atque eos velit. Saepe sint eaque ducimus qui. Dolor dolor beatae autem saepe ratione. Fugiat in in est corrupti. Odit nemo eaque aliquid est possimus veritatis eos. Labore neque mollitia minima.</p>
+								<p>Vitae quasi nihil ad error fugiat nobis est quia. Tempora fuga aperiam est soluta voluptatem animi dolorum. Alias labore ut eveniet laudantium eveniet aliquid. Rerum aperiam consequatur totam ratione.</p>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-primary">Link or something</button>
