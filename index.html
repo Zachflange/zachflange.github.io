@@ -50,25 +50,64 @@
 		<main>
 			<section id="articles" class="container">
 				list of modals with everything and search
-				<div class="d-flex">
-					<article class="">
-						<a href="#article1">
-							<img src="https://placehold.co/100x100/white/black" />
-						</a>
-						<h3>Artikel-1</h3>
-						<p>text Artikel-1 lorem ipsum dolores dingsda</p>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+					<article class="col p-3">
+						<img style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" src="https://placehold.co/250x250/white/black" />
+						<div class="accent p-3">
+							<h3>Artikel-1</h3>
+							<p>derhier ist "hard gecoded für styling"</p>
+						</div>
 					</article>
-					<article class="">
-						<a href="#article2">
-							<img src="https://placehold.co/100x100/white/black" />
+					<article class="col p-3">
+						<img src="https://placehold.co/250x250/yellow/black" />
+						<div class=" p-3">
+							<h3>Artikel-2</h3>
+							<p>Einzelne Artikel als einzelne Dateien (rss?) sollen hier eingebunden werden -> filter, search und eigene URL</p>
+						</div>
+					</article>
+					<article class="col p-3">
+						<a href="#article3">
+							<img src="https://placehold.co/250x250/green/black" />
 						</a>
-						<h3>Artikel-2</h3>
-						<p>text Artikel-2 lorem ipsum dolores dingsda</p>
+						<h3>Artikel-3</h3>
+						<p>Natus porro corporis quis. Ipsum nemo nobis aliquam quis facere. Blanditiis in qui voluptatum earum sunt.</p>
+					</article>
+					<article class="col p-3">
+						<a href="#article4">
+							<img src="https://placehold.co/250x250/teal/black" />
+						</a>
+						<h3>Artikel-4</h3>
+						<p>Natus porro corporis quis. Ipsum nemo nobis aliquam quis facere. Blanditiis in qui voluptatum earum sunt.</p>
 					</article>
 				</div>
 			</section>
+			<section id="test-modal">
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h2 class="modal-title" id="exampleModalLabel">Modal title</h2>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<img src="https://placehold.co/1000x1000/gray/black" class="img-fluid" alt="placeholder" />
+								<p style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<hr \>
+								<h3>Ein h3 Zwischendingens</h3>
+								<p>Libero nostrum repellendus et id ex. Est hic dolorem commodi. Quam ad accusantium non enim cumque.</p>
+								<p>Ut distinctio sunt autem iste sapiente atque eos velit. Saepe sint eaque ducimus qui. Dolor dolor beatae autem saepe ratione. Fugiat in in est corrupti. Odit nemo eaque aliquid est possimus veritatis eos. Labore neque mollitia minima.</p>
+								<p>Vitae quasi nihil ad error fugiat nobis est quia. Tempora fuga aperiam est soluta voluptatem animi dolorum. Alias labore ut eveniet laudantium eveniet aliquid. Rerum aperiam consequatur totam ratione.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary">Link or something</button>
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<aside class="container">
+		<aside class="container accent">
 			<h2>Über den Author</h2>
 		</aside>
 		<footer class="container">
