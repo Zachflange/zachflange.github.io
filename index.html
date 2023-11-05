@@ -50,18 +50,34 @@
 		<main>
 			<section id="articles" class="container">
 				list of modals with everything and search
-				<div class="row">
-					<article class="col">
-							<img style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" src="https://placehold.co/100x100/white/black" />
-						<h3>Artikel-1</h3>
-						<p>derhier ist "hard gecoded für styling"</p>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+					<article class="col p-3">
+						<img style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" src="https://placehold.co/250x250/white/black" />
+						<div class="accent p-3">
+							<h3>Artikel-1</h3>
+							<p>derhier ist "hard gecoded für styling"</p>
+						</div>
 					</article>
-					<article class="col">
-						<a href="#article2">
-							<img src="https://placehold.co/100x100/white/black" />
+					<article class="col p-3">
+						<img src="https://placehold.co/250x250/yellow/black" />
+						<div class=" p-3">
+							<h3>Artikel-2</h3>
+							<p>Einzelne Artikel als einzelne Dateien (rss?) sollen hier eingebunden werden -> filter, search und eigene URL</p>
+						</div>
+					</article>
+					<article class="col p-3">
+						<a href="#article3">
+							<img src="https://placehold.co/250x250/green/black" />
 						</a>
-						<h3>Artikel-2</h3>
-						<p>Einzelne Artikel als einzelne Dateien (rss?) sollen hier eingebunden werden -> filter, search und eigene URL</p>
+						<h3>Artikel-3</h3>
+						<p>Natus porro corporis quis. Ipsum nemo nobis aliquam quis facere. Blanditiis in qui voluptatum earum sunt.</p>
+					</article>
+					<article class="col p-3">
+						<a href="#article4">
+							<img src="https://placehold.co/250x250/teal/black" />
+						</a>
+						<h3>Artikel-4</h3>
+						<p>Natus porro corporis quis. Ipsum nemo nobis aliquam quis facere. Blanditiis in qui voluptatum earum sunt.</p>
 					</article>
 				</div>
 			</section>
@@ -91,7 +107,7 @@
 				</div>
 			</section>
 		</main>
-		<aside class="container">
+		<aside class="container accent">
 			<h2>Über den Author</h2>
 		</aside>
 		<footer class="container">

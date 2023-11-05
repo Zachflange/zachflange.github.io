@@ -1,9 +1,10 @@
 /*Alle Farben hier rein*/
-:root { --light: #f2ecec; --dark: #1a1616; --focus: #a12525; --lightBg: #d4cbcb; --darkBg: #2a2828; --darkAccent: #5A4E4E; --lightAccent: #fefefe }
+:root { --light: #f2ecec; --dark: #1a1616; --focus: #a12525; --lightBg: #d4cbcb; --darkBg: #2a2828; --darkAccent: #444141; --lightAccent: #fefefe }
 /*Farben für normalen/light Modus*/
 body {background-color:red}
 @media (prefers-color-scheme: light) {
 	body, .modal-content { background-color: var(--light); color: var(--dark) }
+	.accent {background-color: var(--lightAccent)}
 	.navbar, .modal-header { background-color: var(--lightAccent)}
 	.navbar a .navbar-brand { color: var(--dark) }
 	.jumbotron { background-color: var(--lightBg) }
@@ -13,9 +14,9 @@ body {background-color:red}
 /*Farben für dark Modus*/
 @media (prefers-color-scheme: dark) {
 	body, .modal-content { background-color: var(--dark); color: var(--light) }
+	.accent {background-color: var(--darkAccent)}
 	.navbar, .modal-header { background-color: var(--darkAccent)}
 	.jumbotron { background-color: var(--darkBg) }
-	.navbar { background-color: var(--darkBg) !important }
 	a.navbar-brand { color: var(--light) }
 	.nav-link { color: var(--light) }
 	.accordion-item { background-color: var(--darkBg); border-bottom-color: var(--light); }
@@ -26,4 +27,5 @@ body {background-color:red}
 }
 .featurette { align-items: center; }
 .carousel-caption { color: var(--dark) }
-article {border: solid 3px red}
+article {max-width: 400px}
+article img {max-width:100%; height:auto}
